@@ -1,10 +1,10 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 public class pnlNuevoViaje extends javax.swing.JPanel {
 
@@ -22,7 +22,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         if (modViaje == null) {      
             lblVolver.setVisible(false);
         } else {
-            lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/ModificarViaje.png")));
+            lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/ModificarViaje.png")));
             txtNombre.setText(modViaje.getNombre());
             dChooserFechaI.setCalendar(modViaje.getFechaI());
             dChooserFechaF.setCalendar(modViaje.getFechaF());
@@ -52,7 +52,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         });
         add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 200, 20));
 
-        lblEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Eliminar.png"))); // NOI18N
+        lblEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Eliminar.png"))); // NOI18N
         lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -69,7 +69,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         add(dChooserFechaI, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 138, 200, -1));
         add(dChooserFechaF, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 168, 200, -1));
 
-        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardar.png"))); // NOI18N
+        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png"))); // NOI18N
         lblBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblBoton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -84,7 +84,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         });
         add(lblBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 130, 30));
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -93,7 +93,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         });
         add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 35, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/NuevoViaje.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/NuevoViaje.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -149,11 +149,11 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
     }//GEN-LAST:event_lblBotonMouseClicked
 
     private void lblBotonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonMouseEntered
-        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardarONN.png")));
+        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardarONN.png")));
     }//GEN-LAST:event_lblBotonMouseEntered
 
     private void lblBotonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBotonMouseExited
-        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardar.png")));
+        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png")));
     }//GEN-LAST:event_lblBotonMouseExited
 
     private void lblVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblVolverMouseClicked

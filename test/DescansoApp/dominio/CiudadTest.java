@@ -1,8 +1,8 @@
 package DescansoApp.dominio;
 
-import descansoApp.dominio.ComercioActividad;
-import descansoApp.dominio.Ciudad;
-import descansoApp.herramientas.TipoCA;
+import DescansoApp.dominio.ComercioActividad;
+import DescansoApp.dominio.Ciudad;
+import DescansoApp.herramientas.TipoCA;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import org.junit.Test;
@@ -190,7 +190,7 @@ public class CiudadTest {
     @Test
     public void testAgregarImagen(){
         System.out.println("Agregar imagen(agrega imagen a una lista de imagenes)");
-        String ruta= "/descansoApp/baseDatos/fraybentos1.jpg";
+        String ruta= "/DescansoApp/baseDatos/fraybentos1.jpg";
         Ciudad instance = new Ciudad();
         instance.agregarImagen(ruta);
         
@@ -206,7 +206,7 @@ public class CiudadTest {
     @Test
     public void testGetImagenes(){
         System.out.println("GetImagenes compara las rutas de una lista de imagenes");
-        String ruta= "/descansoApp/baseDatos/fraybentos2.jpg";
+        String ruta= "/DescansoApp/baseDatos/fraybentos2.jpg";
         Ciudad instance = new Ciudad();
         instance.agregarImagen(ruta);
         

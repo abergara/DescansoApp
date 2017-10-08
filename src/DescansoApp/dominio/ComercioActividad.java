@@ -1,6 +1,6 @@
-package descansoApp.dominio;
+package DescansoApp.dominio;
 
-import descansoApp.herramientas.TipoCA;
+import DescansoApp.herramientas.TipoCA;
 import java.io.Serializable;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;

@@ -1,4 +1,4 @@
-package descansoApp.dominio;
+package DescansoApp.dominio;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

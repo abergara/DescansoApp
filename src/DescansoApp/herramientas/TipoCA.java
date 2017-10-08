@@ -1,4 +1,4 @@
-package descansoApp.herramientas;
+package DescansoApp.herramientas;
 
 public enum TipoCA{
     alojamiento, estGastronomico, actividad, otros;

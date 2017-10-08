@@ -1,8 +1,8 @@
-package descansoApp.herramientas;
+package DescansoApp.herramientas;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import descansoApp.dominio.Ciudad;
+import DescansoApp.dominio.Ciudad;
 
 public class Buscador {
 

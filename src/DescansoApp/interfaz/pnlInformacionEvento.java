@@ -1,9 +1,9 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import javax.swing.JFrame;
-import descansoApp.dominio.Evento;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Evento;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 public class pnlInformacionEvento extends javax.swing.JPanel {
 
@@ -171,7 +171,7 @@ public class pnlInformacionEvento extends javax.swing.JPanel {
         txtHoraInicio.setOpaque(false);
         add(txtHoraInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 135, 130, 20));
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -180,7 +180,7 @@ public class pnlInformacionEvento extends javax.swing.JPanel {
         });
         add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 28, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/InformacionEvento.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/InformacionEvento.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

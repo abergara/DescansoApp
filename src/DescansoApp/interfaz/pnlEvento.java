@@ -1,22 +1,22 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import descansoApp.dominio.Evento;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
-import descansoApp.herramientas.EsNumero;
+import DescansoApp.dominio.Evento;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
+import DescansoApp.herramientas.EsNumero;
 
 public class pnlEvento extends javax.swing.JPanel {
 
     private Viaje viaje;
     private Evento modEvento;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
     private JFrame miVentana;
     private Sistema modelo;
 
-    public pnlEvento(Sistema unModelo, Viaje unViaje, descansoApp.dominio.Ciudad unaCiudad, Evento unEvento, JFrame unContenedor) {
+    public pnlEvento(Sistema unModelo, Viaje unViaje, DescansoApp.dominio.Ciudad unaCiudad, Evento unEvento, JFrame unContenedor) {
         initComponents();
         modelo = unModelo;
         viaje = unViaje;
@@ -28,7 +28,7 @@ public class pnlEvento extends javax.swing.JPanel {
             lblEliminar1.setVisible(false);
             lblVolver.setVisible(false);
         } else {
-            lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/ModificarEvento.png")));
+            lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/ModificarEvento.png")));
             txtNombre.setText(modEvento.getNombre());
             txtDescripcion.setText(modEvento.getDescripcion());
             txtHoraIHoras.setText("" + modEvento.getFechaHoraI().get(Calendar.HOUR));
@@ -134,7 +134,7 @@ public class pnlEvento extends javax.swing.JPanel {
         });
         add(txtHoraFMinutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 19, 18));
 
-        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardar.png"))); // NOI18N
+        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png"))); // NOI18N
         lblGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -149,7 +149,7 @@ public class pnlEvento extends javax.swing.JPanel {
         });
         add(lblGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 250, -1, 30));
 
-        lblEliminar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Eliminar.png"))); // NOI18N
+        lblEliminar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Eliminar.png"))); // NOI18N
         lblEliminar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblEliminar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -164,7 +164,7 @@ public class pnlEvento extends javax.swing.JPanel {
         });
         add(lblEliminar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, -1, 30));
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -173,7 +173,7 @@ public class pnlEvento extends javax.swing.JPanel {
         });
         add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 28, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/AgregarEvento.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/AgregarEvento.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -202,11 +202,11 @@ public class pnlEvento extends javax.swing.JPanel {
     }//GEN-LAST:event_txtHoraFMinutosActionPerformed
 
     private void lblGuardarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseEntered
-        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardarONN.png")));
+        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardarONN.png")));
     }//GEN-LAST:event_lblGuardarMouseEntered
 
     private void lblGuardarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseExited
-        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGuardar.png")));
+        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png")));
     }//GEN-LAST:event_lblGuardarMouseExited
 
     private void lblGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGuardarMouseClicked

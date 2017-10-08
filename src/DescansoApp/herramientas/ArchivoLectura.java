@@ -1,4 +1,4 @@
-package descansoApp.herramientas;
+package DescansoApp.herramientas;
 
 import java.io.*;
 import javax.swing.JOptionPane;

@@ -1,11 +1,11 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.*;
-import descansoApp.dominio.Sistema;
-import descansoApp.herramientas.Buscador;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.herramientas.Buscador;
 
 public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
@@ -14,7 +14,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
     public pnlResultadoBusqueda(Sistema unModelo, JFrame unPadre, String palabra) {
         initComponents();
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Fondo.png")));
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png")));
         pnlResultados.setOpaque(false);
         scroll.setOpaque(false);
         scroll.getViewport().setOpaque(false);
@@ -41,7 +41,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnHome.png"))); // NOI18N
+        lblHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
         lblHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -50,7 +50,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
         });
         add(lblHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 38, 30, 30));
 
-        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Lupa.png"))); // NOI18N
+        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Lupa.png"))); // NOI18N
         lblBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblBuscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -97,7 +97,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
         add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 770, 370));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Fondo.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -137,7 +137,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
         pnlResultados.repaint();
 
         Buscador bus = new Buscador(modelo.getListaCiudades());
-        ArrayList<descansoApp.dominio.Ciudad> resultados = bus.buscar(unaPalabra);
+        ArrayList<DescansoApp.dominio.Ciudad> resultados = bus.buscar(unaPalabra);
 
         int cantResultados = resultados.size();
         if (cantResultados > 0) {

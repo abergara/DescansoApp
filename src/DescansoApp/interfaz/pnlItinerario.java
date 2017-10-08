@@ -1,13 +1,13 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import descansoApp.dominio.Evento;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Evento;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 
 public class pnlItinerario extends javax.swing.JPanel {
@@ -46,7 +46,7 @@ public class pnlItinerario extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -82,7 +82,7 @@ public class pnlItinerario extends javax.swing.JPanel {
         lblNoHay.setText("No hay eventos guardados!");
         add(lblNoHay, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Itinerario.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Itinerario.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -103,7 +103,7 @@ public class pnlItinerario extends javax.swing.JPanel {
        
         if (cantResultados > 0) {
             lblNoHay.setVisible(false);
-            descansoApp.dominio.Ciudad ciudad = null;
+            DescansoApp.dominio.Ciudad ciudad = null;
             Calendar fecha = null;
 
             for (int i = 0; i < cantResultados; i++) {

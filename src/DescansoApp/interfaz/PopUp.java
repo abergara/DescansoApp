@@ -1,4 +1,4 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 public class PopUp extends javax.swing.JFrame {
 
@@ -11,7 +11,7 @@ public class PopUp extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("descansoApp");
+        setTitle("DescansoApp");
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 

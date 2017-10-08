@@ -1,10 +1,10 @@
-package descansoApp;
+package DescansoApp;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import descansoApp.dominio.Ciudad;
-import descansoApp.dominio.ComercioActividad;
-import descansoApp.herramientas.TipoCA;
+import DescansoApp.dominio.Ciudad;
+import DescansoApp.dominio.ComercioActividad;
+import DescansoApp.herramientas.TipoCA;
 
 public class Informacion {
 

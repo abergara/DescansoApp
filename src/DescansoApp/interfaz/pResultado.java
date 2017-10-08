@@ -1,17 +1,17 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import descansoApp.dominio.Sistema;
+import DescansoApp.dominio.Sistema;
 
 public class pResultado extends javax.swing.JPanel {
 
     private JFrame ventana;
     private JPanel padre;
     private Sistema modelo;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
     
-    public pResultado(Sistema unModelo, descansoApp.dominio.Ciudad unaCiudad, JFrame unaVentana, JPanel unPadre) {
+    public pResultado(Sistema unModelo, DescansoApp.dominio.Ciudad unaCiudad, JFrame unaVentana, JPanel unPadre) {
         initComponents();
         modelo = unModelo;
         ciudad = unaCiudad;

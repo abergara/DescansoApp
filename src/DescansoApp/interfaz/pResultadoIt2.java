@@ -1,4 +1,4 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 public class pResultadoIt2 extends javax.swing.JPanel {
 
