@@ -1,23 +1,23 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import descansoApp.dominio.ComercioActividad;
-import descansoApp.dominio.Sistema;
-import descansoApp.herramientas.TipoCA;
+import DescansoApp.dominio.ComercioActividad;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.herramientas.TipoCA;
 
 public class pnlDondeQue extends javax.swing.JPanel {
 
     private Sistema modelo;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
     private JFrame padre;
     ArrayList<ComercioActividad> lista;
     ArrayList<String> filtros;
 
-    public pnlDondeQue(Sistema unModelo, descansoApp.dominio.Ciudad unaCiudad, JFrame unPadre, TipoCA unTipo) {
+    public pnlDondeQue(Sistema unModelo, DescansoApp.dominio.Ciudad unaCiudad, JFrame unPadre, TipoCA unTipo) {
         initComponents();
         pnlResultados.setOpaque(false);
         pnlResultados.setLayout(new BoxLayout(pnlResultados, BoxLayout.PAGE_AXIS));
@@ -71,7 +71,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -123,7 +123,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
         lblTitulo.setText("TITULO");
         add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 36, 240, 30));
 
-        lblVolver1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnHome.png"))); // NOI18N
+        lblVolver1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
         lblVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +132,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
         });
         add(lblVolver1, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 38, 30, 30));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Fondo.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

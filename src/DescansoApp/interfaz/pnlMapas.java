@@ -1,14 +1,14 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import javax.swing.JFrame;
-import descansoApp.dominio.Sistema;
+import DescansoApp.dominio.Sistema;
 
 public class pnlMapas extends javax.swing.JPanel {
     private Sistema modelo;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
     private JFrame padre;
     
-    public pnlMapas(Sistema unModelo, descansoApp.dominio.Ciudad unaCiudad, JFrame unPadre)  {
+    public pnlMapas(Sistema unModelo, DescansoApp.dominio.Ciudad unaCiudad, JFrame unPadre)  {
         initComponents();
         modelo = unModelo;
         ciudad = unaCiudad;
@@ -29,7 +29,7 @@ public class pnlMapas extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -38,7 +38,7 @@ public class pnlMapas extends javax.swing.JPanel {
         });
         add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 38, 30, 30));
 
-        lblMapa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/mapaaa.jpg"))); // NOI18N
+        lblMapa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/mapaaa.jpg"))); // NOI18N
         add(lblMapa, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 88, 810, 400));
 
         lblTitulo.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
@@ -46,7 +46,7 @@ public class pnlMapas extends javax.swing.JPanel {
         lblTitulo.setText("Mapa de Fray Bentos");
         add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 36, 267, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Fondo.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

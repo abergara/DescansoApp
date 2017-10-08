@@ -1,10 +1,10 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import descansoApp.dominio.Evento;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Evento;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 public class pResultadoIt3 extends javax.swing.JPanel {
 
@@ -54,7 +54,7 @@ public class pResultadoIt3 extends javax.swing.JPanel {
         lblUbicacion.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         lblUbicacion.setText("(Ubicacion)");
 
-        lblEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Editar.png"))); // NOI18N
+        lblEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Editar.png"))); // NOI18N
         lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblEditar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

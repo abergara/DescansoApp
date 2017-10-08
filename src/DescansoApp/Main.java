@@ -1,4 +1,4 @@
-package descansoApp;
+package DescansoApp;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import descansoApp.dominio.Ciudad;
-import descansoApp.dominio.Sistema;
-import descansoApp.interfaz.Principal;
-import descansoApp.interfaz.pnlInicio;
+import DescansoApp.dominio.Ciudad;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.interfaz.Principal;
+import DescansoApp.interfaz.pnlInicio;
 
 public class Main {
 

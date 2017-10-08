@@ -1,8 +1,8 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.io.IOException;
-import descansoApp.Main;
-import descansoApp.dominio.Sistema;
+import DescansoApp.Main;
+import DescansoApp.dominio.Sistema;
 
 public class Principal extends javax.swing.JFrame {
 
@@ -18,7 +18,7 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("descansoApp");
+        setTitle("DescansoApp");
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {

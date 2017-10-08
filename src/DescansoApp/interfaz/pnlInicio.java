@@ -1,10 +1,10 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.awt.BorderLayout;
 import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import descansoApp.dominio.Sistema;
+import DescansoApp.dominio.Sistema;
 
 public class pnlInicio extends javax.swing.JPanel {
 
@@ -47,7 +47,7 @@ public class pnlInicio extends javax.swing.JPanel {
         add(lblNuevoViaje);
         lblNuevoViaje.setBounds(60, 100, 60, 40);
 
-        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnMisViajes.png"))); // NOI18N
+        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnMisViajes.png"))); // NOI18N
         lblMisViajes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblMisViajes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -63,7 +63,7 @@ public class pnlInicio extends javax.swing.JPanel {
         add(lblMisViajes);
         lblMisViajes.setBounds(110, 280, 132, 40);
 
-        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Lupa.png"))); // NOI18N
+        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Lupa.png"))); // NOI18N
         lblBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblBuscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -83,11 +83,11 @@ public class pnlInicio extends javax.swing.JPanel {
         add(txtBuscador);
         txtBuscador.setBounds(370, 290, 340, 22);
 
-        lblBuscador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Buscador.png"))); // NOI18N
+        lblBuscador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Buscador.png"))); // NOI18N
         add(lblBuscador);
         lblBuscador.setBounds(340, 190, 440, 160);
 
-        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/FondoInicio.png"))); // NOI18N
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/FondoInicio.png"))); // NOI18N
         lblImagen.setPreferredSize(new java.awt.Dimension(800, 450));
         lblImagen.setVerifyInputWhenFocusTarget(false);
         add(lblImagen);
@@ -95,19 +95,19 @@ public class pnlInicio extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblNuevoViajeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNuevoViajeMouseEntered
-        lblNuevoViaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnNuevoViajeON.png")));
+        lblNuevoViaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnNuevoViajeON.png")));
     }//GEN-LAST:event_lblNuevoViajeMouseEntered
 
     private void lblNuevoViajeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNuevoViajeMouseExited
-        lblNuevoViaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnNuevoViaje.png")));
+        lblNuevoViaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnNuevoViaje.png")));
     }//GEN-LAST:event_lblNuevoViajeMouseExited
 
     private void lblMisViajesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMisViajesMouseEntered
-        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnMisViajesON.png")));
+        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnMisViajesON.png")));
     }//GEN-LAST:event_lblMisViajesMouseEntered
 
     private void lblMisViajesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMisViajesMouseExited
-        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnMisViajes.png")));
+        lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnMisViajes.png")));
     }//GEN-LAST:event_lblMisViajesMouseExited
 
     private void lblNuevoViajeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNuevoViajeMouseClicked

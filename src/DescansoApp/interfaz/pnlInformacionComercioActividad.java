@@ -1,4 +1,4 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.awt.Desktop;
 import java.net.URI;
@@ -9,9 +9,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import descansoApp.dominio.ComercioActividad;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.ComercioActividad;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 public class pnlInformacionComercioActividad extends javax.swing.JPanel {
 
@@ -20,9 +20,9 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
     private JFrame padre;
     private ArrayList<ImageIcon> listaImagenes;
     private int contador = 0;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
 
-    public pnlInformacionComercioActividad(Sistema unModelo, ComercioActividad unCA, JFrame unPadre, descansoApp.dominio.Ciudad unaCiudad) {
+    public pnlInformacionComercioActividad(Sistema unModelo, ComercioActividad unCA, JFrame unPadre, DescansoApp.dominio.Ciudad unaCiudad) {
         initComponents();
         modelo = unModelo;
         cA = unCA;
@@ -130,7 +130,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
         lblNombreEst.setText("Nombre Establecimiento");
         jPanel1.add(lblNombreEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 36, 400, 30));
 
-        lblSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGaleriader.png"))); // NOI18N
+        lblSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGaleriader.png"))); // NOI18N
         lblSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblSiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -141,7 +141,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
 
         jPanel1.add(comboViajes, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, 260, 22));
 
-        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnVolver.png"))); // NOI18N
+        lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
         lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -150,7 +150,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
         });
         jPanel1.add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 38, 30, 30));
 
-        lblAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnGaleriaIzq.png"))); // NOI18N
+        lblAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGaleriaIzq.png"))); // NOI18N
         lblAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblAnterior.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -175,7 +175,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
         jPanel1.add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 202, 340, 20));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/Repercusiones.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Repercusiones.png"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -262,7 +262,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
 
         jPanel1.add(scroll4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 292, 340, 20));
 
-        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnPlus.png"))); // NOI18N
+        lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnPlus.png"))); // NOI18N
         lblBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblBoton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -288,7 +288,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
         });
         jPanel1.add(lblpagina, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 318, 340, 20));
 
-        lblVolver1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/btnHome.png"))); // NOI18N
+        lblVolver1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
         lblVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -297,7 +297,7 @@ public class pnlInformacionComercioActividad extends javax.swing.JPanel {
         });
         jPanel1.add(lblVolver1, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 38, 30, 30));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/InformacionComercioActividad.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/InformacionComercioActividad.png"))); // NOI18N
         jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jScrollPane1.setViewportView(jPanel1);

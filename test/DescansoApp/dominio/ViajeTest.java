@@ -1,7 +1,7 @@
 package DescansoApp.dominio;
 
-import descansoApp.dominio.Evento;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Evento;
+import DescansoApp.dominio.Viaje;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;

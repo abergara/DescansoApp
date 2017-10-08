@@ -1,10 +1,10 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import java.util.ArrayList;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import descansoApp.dominio.Sistema;
-import descansoApp.dominio.Viaje;
+import DescansoApp.dominio.Sistema;
+import DescansoApp.dominio.Viaje;
 
 public class pnlMisViajes extends javax.swing.JPanel {
 
@@ -62,7 +62,7 @@ public class pnlMisViajes extends javax.swing.JPanel {
         lblNoHay.setText("No hay viajes guardados!");
         add(lblNoHay, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 90, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descansoApp/imagenes/MisViajes.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/MisViajes.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 280));
     }// </editor-fold>//GEN-END:initComponents
 

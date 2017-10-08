@@ -1,10 +1,10 @@
-package descansoApp.interfaz;
+package DescansoApp.interfaz;
 
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import descansoApp.dominio.ComercioActividad;
-import descansoApp.dominio.Sistema;
+import DescansoApp.dominio.ComercioActividad;
+import DescansoApp.dominio.Sistema;
 
 public class pResultadoDondeQue extends javax.swing.JPanel {
 
@@ -12,9 +12,9 @@ public class pResultadoDondeQue extends javax.swing.JPanel {
     private ComercioActividad cA;
     private JPanel padre;
     private JFrame ventana;
-    private descansoApp.dominio.Ciudad ciudad;
+    private DescansoApp.dominio.Ciudad ciudad;
    
-    public pResultadoDondeQue(Sistema unModelo, ComercioActividad unCA,  JFrame unaVentana, JPanel unPadre, descansoApp.dominio.Ciudad unaCiudad) {
+    public pResultadoDondeQue(Sistema unModelo, ComercioActividad unCA,  JFrame unaVentana, JPanel unPadre, DescansoApp.dominio.Ciudad unaCiudad) {
         initComponents();
        
         txtDes.setOpaque(false);
