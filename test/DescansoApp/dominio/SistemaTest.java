@@ -1,5 +1,6 @@
 package DescansoApp.dominio;
 
+import DescansoApp.accesoADatos.LectorJSON;
 import DescansoApp.dominio.Sistema;
 import DescansoApp.dominio.Ciudad;
 import DescansoApp.dominio.Viaje;
@@ -14,7 +15,8 @@ public class SistemaTest {
         System.out.println("Lista Viajes");
         Viaje viaje= new Viaje();
         viaje.setNombre("viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         instance.agregarViaje(viaje);
         
         ArrayList<Viaje> expResult= new ArrayList();
@@ -26,7 +28,8 @@ public class SistemaTest {
     @Test
     public void testGetListaCiudades() {
         System.out.println("Lista Ciudades");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         Ciudad ciudad= new Ciudad();
         instance.agregarCiudad(ciudad);
 
@@ -41,7 +44,8 @@ public class SistemaTest {
         System.out.println("Agregar Viaje(agrega un viaje correctamente)");
         Viaje viaje = new Viaje();
         viaje.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         instance.agregarViaje(viaje);
         
         ArrayList<Viaje> expResult= new ArrayList();
@@ -57,7 +61,8 @@ public class SistemaTest {
         viaje.setNombre("Viaje");
         Viaje viaje2 = new Viaje();
         viaje2.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         Exception error= null;
         instance.agregarViaje(viaje);
         
@@ -77,7 +82,8 @@ public class SistemaTest {
         System.out.println("Eliminar Viaje(el viaje existe)");
         Viaje unViaje = new Viaje();
         unViaje.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         instance.agregarViaje(unViaje);
         
         boolean expResult = true;
@@ -91,7 +97,8 @@ public class SistemaTest {
         System.out.println("Eliminar Viaje(el viaje no existe)");
         Viaje unViaje = new Viaje();
         unViaje.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
 
         boolean expResult = false;
         boolean result = instance.eliminarViaje(unViaje);
@@ -103,7 +110,8 @@ public class SistemaTest {
         System.out.println("Pertenece Viaje(el viaje no pertenece al sistema)");
         Viaje viaje = new Viaje();
         viaje.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         
         boolean expResult = false;
         boolean result = instance.pertenece(viaje);
@@ -115,7 +123,8 @@ public class SistemaTest {
         System.out.println("Pertenece Viaje 2(el viaje pertenece al sistema)");
         Viaje unViaje = new Viaje();
         unViaje.setNombre("Viaje");
-        Sistema instance = new Sistema();
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         instance.agregarViaje(unViaje);
         
         boolean expResult = true;
@@ -129,8 +138,9 @@ public class SistemaTest {
         //Unica prueba de agregar ciudad, ya que las ciudades las agregamos nosotros por codigo, en usuario no interactua
         System.out.println("agregarCiudad(agrega ciudad que no existe)");
         Ciudad ciudad = new Ciudad();
-        ciudad.setNombre("Fray Bentos");
-        Sistema instance = new Sistema();
+        ciudad.setNombre("Mercedes");
+        LectorJSON accesoADatos = new LectorJSON();
+        Sistema instance = new Sistema(accesoADatos);
         instance.agregarCiudad(ciudad);
         
         ArrayList<Ciudad> expResult= new ArrayList();
