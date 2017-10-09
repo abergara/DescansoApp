@@ -14,7 +14,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
     private Sistema modelo;
     private DescansoApp.dominio.Ciudad ciudad;
     private JFrame padre;
-    ArrayList<ComercioActividad> lista;
+    ArrayList<ComercioActividad> lista; 
     ArrayList<String> filtros;
 
     public pnlDondeQue(Sistema unModelo, DescansoApp.dominio.Ciudad unaCiudad, JFrame unPadre, TipoCA unTipo) {
@@ -69,10 +69,11 @@ public class pnlDondeQue extends javax.swing.JPanel {
         lblVolver1 = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(13, 145, 233));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -124,7 +125,7 @@ public class pnlDondeQue extends javax.swing.JPanel {
         add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 36, 240, 30));
 
         lblVolver1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
-        lblVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolver1MouseClicked(evt);
@@ -132,7 +133,8 @@ public class pnlDondeQue extends javax.swing.JPanel {
         });
         add(lblVolver1, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 38, 30, 30));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
+        lblFondo.setBackground(new java.awt.Color(13, 149, 240));
+        lblFondo.setOpaque(true);
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

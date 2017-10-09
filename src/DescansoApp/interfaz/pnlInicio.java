@@ -28,24 +28,25 @@ public class pnlInicio extends javax.swing.JPanel {
         lblBuscador = new javax.swing.JLabel();
         lblImagen = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(230, 159, 39));
         setPreferredSize(new java.awt.Dimension(840, 500));
         setLayout(null);
 
-        lblNuevoViaje.setText("Nuevo Viaje");
+        lblNuevoViaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnNuevoViaje.png"))); // NOI18N
         lblNuevoViaje.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblNuevoViaje.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblNuevoViajeMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblNuevoViajeMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblNuevoViajeMouseExited(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblNuevoViajeMouseEntered(evt);
+            }
         });
         add(lblNuevoViaje);
-        lblNuevoViaje.setBounds(60, 100, 60, 40);
+        lblNuevoViaje.setBounds(260, 300, 132, 40);
 
         lblMisViajes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnMisViajes.png"))); // NOI18N
         lblMisViajes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -53,15 +54,15 @@ public class pnlInicio extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblMisViajesMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblMisViajesMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblMisViajesMouseExited(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblMisViajesMouseEntered(evt);
+            }
         });
         add(lblMisViajes);
-        lblMisViajes.setBounds(110, 280, 132, 40);
+        lblMisViajes.setBounds(430, 300, 132, 40);
 
         lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Lupa.png"))); // NOI18N
         lblBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -71,7 +72,7 @@ public class pnlInicio extends javax.swing.JPanel {
             }
         });
         add(lblBuscar);
-        lblBuscar.setBounds(720, 290, 20, 20);
+        lblBuscar.setBounds(590, 230, 20, 20);
 
         txtBuscador.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         txtBuscador.setBorder(null);
@@ -81,13 +82,12 @@ public class pnlInicio extends javax.swing.JPanel {
             }
         });
         add(txtBuscador);
-        txtBuscador.setBounds(370, 290, 340, 22);
+        txtBuscador.setBounds(240, 230, 340, 22);
 
         lblBuscador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Buscador.png"))); // NOI18N
         add(lblBuscador);
-        lblBuscador.setBounds(340, 190, 440, 160);
+        lblBuscador.setBounds(200, 130, 440, 160);
 
-        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/FondoInicio.png"))); // NOI18N
         lblImagen.setPreferredSize(new java.awt.Dimension(800, 450));
         lblImagen.setVerifyInputWhenFocusTarget(false);
         add(lblImagen);

@@ -53,7 +53,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 200, 20));
 
         lblEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Eliminar.png"))); // NOI18N
-        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblEliminarMouseClicked(evt);
@@ -70,7 +70,7 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         add(dChooserFechaF, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 168, 200, -1));
 
         lblBoton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png"))); // NOI18N
-        lblBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblBoton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBotonMouseClicked(evt);
@@ -85,13 +85,13 @@ public class pnlNuevoViaje extends javax.swing.JPanel {
         add(lblBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 130, 30));
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
-        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolverMouseClicked(evt);
             }
         });
-        add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 35, -1, -1));
+        add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, 30));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/NuevoViaje.png"))); // NOI18N
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

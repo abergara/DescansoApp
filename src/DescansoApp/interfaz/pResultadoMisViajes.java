@@ -14,6 +14,7 @@ public class pResultadoMisViajes extends javax.swing.JPanel {
     
     public pResultadoMisViajes(Sistema unModelo, Viaje unViaje, JFrame unContenedorPrincipal, JPanel miContenedor) {
         initComponents();
+        
         modelo = unModelo;
         viaje = unViaje;
         miVentana = unContenedorPrincipal;

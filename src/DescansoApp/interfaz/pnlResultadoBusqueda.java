@@ -14,7 +14,6 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
     public pnlResultadoBusqueda(Sistema unModelo, JFrame unPadre, String palabra) {
         initComponents();
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png")));
         pnlResultados.setOpaque(false);
         scroll.setOpaque(false);
         scroll.getViewport().setOpaque(false);
@@ -39,39 +38,35 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
         pnlResultados = new javax.swing.JPanel();
         lblFondo = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(29, 154, 238));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
-        lblHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblHome.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblHomeMouseClicked(evt);
             }
         });
-        add(lblHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 38, 30, 30));
+        add(lblHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 30, 20));
 
         lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Lupa.png"))); // NOI18N
-        lblBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblBuscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBuscarMouseClicked(evt);
             }
         });
-        add(lblBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 38, 20, 20));
+        add(lblBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, 20, 20));
 
         txtBuscador.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         txtBuscador.setBorder(null);
-        txtBuscador.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBuscadorActionPerformed(evt);
-            }
-        });
         txtBuscador.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtBuscadorKeyReleased(evt);
             }
         });
-        add(txtBuscador, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 250, 20));
+        add(txtBuscador, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 430, 20));
 
         lblNoHay.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         lblNoHay.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,7 +75,7 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
         lblTitulo.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
         lblTitulo.setText("Resultados de la búsqueda");
-        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 38, -1, -1));
+        add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, -1, -1));
 
         javax.swing.GroupLayout pnlResultadosLayout = new javax.swing.GroupLayout(pnlResultados);
         pnlResultados.setLayout(pnlResultadosLayout);
@@ -95,15 +90,9 @@ public class pnlResultadoBusqueda extends javax.swing.JPanel {
 
         scroll.setViewportView(pnlResultados);
 
-        add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 770, 370));
-
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
+        add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 770, 350));
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtBuscadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscadorActionPerformed
-
-    }//GEN-LAST:event_txtBuscadorActionPerformed
 
     private void lblBuscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBuscarMouseClicked
         if (txtBuscador.getText().length() <= 3) {

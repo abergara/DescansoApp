@@ -1,5 +1,6 @@
 package DescansoApp.interfaz;
 
+import DescansoApp.dominio.Ciudad;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -8,6 +9,7 @@ import javax.swing.JFrame;
 import DescansoApp.dominio.Evento;
 import DescansoApp.dominio.Sistema;
 import DescansoApp.dominio.Viaje;
+import DescansoApp.herramientas.Utilidades;
 
 
 public class pnlItinerario extends javax.swing.JPanel {
@@ -47,7 +49,7 @@ public class pnlItinerario extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
-        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolverMouseClicked(evt);
@@ -103,7 +105,7 @@ public class pnlItinerario extends javax.swing.JPanel {
        
         if (cantResultados > 0) {
             lblNoHay.setVisible(false);
-            DescansoApp.dominio.Ciudad ciudad = null;
+            Ciudad ciudad = null;
             Calendar fecha = null;
 
             for (int i = 0; i < cantResultados; i++) {
@@ -116,7 +118,7 @@ public class pnlItinerario extends javax.swing.JPanel {
                     pnlResultados.add(p);
                 }
 
-                if (!fechasIguales(actual.getFechaHoraI(), fecha)) {
+                if (!Utilidades.fechasIguales(actual.getFechaHoraI(), fecha)) {
                     fecha = actual.getFechaHoraI();
                     pResultadoIt2 p2 = new pResultadoIt2(actual.fechaInicioToString());
                     pnlResultados.add(p2);
@@ -132,18 +134,6 @@ public class pnlItinerario extends javax.swing.JPanel {
         } else {
             lblNoHay.setVisible(true);
         }
-    }
-    
-     public boolean fechasIguales(Calendar f1, Calendar f2){
-        if (f1 == null && f2 != null) return false;
-        if (f1 != null && f2 == null) return false;
-        
-        if (f1.get(Calendar.DAY_OF_MONTH) == f2.get(Calendar.DAY_OF_MONTH))
-            if (f1.get(Calendar.MONTH) == f2.get(Calendar.MONTH))
-                if (f1.get((Calendar.YEAR)) == f1.get((Calendar.YEAR)))
-                    return true;
-        
-        return false;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

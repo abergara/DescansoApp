@@ -66,7 +66,7 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
         pnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnHome.png"))); // NOI18N
-        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolverMouseClicked(evt);
@@ -80,61 +80,61 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
         pnl.add(lblNombreCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 36, -1, -1));
 
         lblDondeDorimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnDondeDormir.png"))); // NOI18N
-        lblDondeDorimir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblDondeDorimir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblDondeDorimir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblDondeDorimirMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblDondeDorimirMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblDondeDorimirMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblDondeDorimirMouseEntered(evt);
             }
         });
         pnl.add(lblDondeDorimir, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 87, -1, -1));
 
         lblDondeComer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnDondeComer.png"))); // NOI18N
-        lblDondeComer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblDondeComer.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblDondeComer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblDondeComerMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblDondeComerMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblDondeComerMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblDondeComerMouseEntered(evt);
             }
         });
         pnl.add(lblDondeComer, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 87, 150, 30));
 
         lblQueHacer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnQueHacer.png"))); // NOI18N
-        lblQueHacer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblQueHacer.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblQueHacer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblQueHacerMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblQueHacerMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblQueHacerMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblQueHacerMouseEntered(evt);
             }
         });
         pnl.add(lblQueHacer, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 87, -1, -1));
 
         lblQueEstaCerca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnQueEstaCerca.png"))); // NOI18N
-        lblQueEstaCerca.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblQueEstaCerca.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblQueEstaCerca.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblQueEstaCercaMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblQueEstaCercaMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 lblQueEstaCercaMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblQueEstaCercaMouseEntered(evt);
             }
         });
         pnl.add(lblQueEstaCerca, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 87, 150, -1));
@@ -143,24 +143,24 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
         pnlContenedor.setLayout(null);
 
         lblSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGaleriader.png"))); // NOI18N
-        lblSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblSiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblSiguienteMouseClicked(evt);
             }
         });
         pnlContenedor.add(lblSiguiente);
-        lblSiguiente.setBounds(420, 700, 0, 20);
+        lblSiguiente.setBounds(420, 700, 26, 20);
 
         lblAnterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGaleriaIzq.png"))); // NOI18N
-        lblAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblAnterior.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblAnteriorMouseClicked(evt);
             }
         });
         pnlContenedor.add(lblAnterior);
-        lblAnterior.setBounds(0, 700, 0, 0);
+        lblAnterior.setBounds(0, 700, 26, 21);
 
         lblGaleria.setText(" ");
         lblGaleria.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -207,7 +207,7 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
         lblRepercusiones.setForeground(new java.awt.Color(255, 255, 255));
         lblRepercusiones.setText("Repercusiones");
         pnlContenedor.add(lblRepercusiones);
-        lblRepercusiones.setBounds(480, 90, 107, 17);
+        lblRepercusiones.setBounds(480, 90, 103, 17);
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Repercusiones.png"))); // NOI18N
@@ -240,33 +240,40 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 857, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblAnteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAnteriorMouseClicked
-        if (contador == 0) {
-            contador = listaImagenes.size() - 1;
-        } else {
-            contador--;
+        if (!listaImagenes.isEmpty()) {
+            if (contador == 0) {
+                    contador = listaImagenes.size() - 1;
+            } else {
+                contador--;
+            }
+            lblGaleria.setIcon(listaImagenes.get(contador));
         }
-        lblGaleria.setIcon(listaImagenes.get(contador));
     }//GEN-LAST:event_lblAnteriorMouseClicked
 
     private void lblSiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSiguienteMouseClicked
-        if (contador == listaImagenes.size() - 1) {
-            contador = 0;
-        } else {
-            contador++;
+        if (!listaImagenes.isEmpty()) {
+            if (contador == listaImagenes.size() - 1) {
+                contador = 0;
+            } else {
+                contador++;
+            }
+            lblGaleria.setIcon(listaImagenes.get(contador));
         }
-
-        lblGaleria.setIcon(listaImagenes.get(contador));
     }//GEN-LAST:event_lblSiguienteMouseClicked
 
     private void lblDondeDorimirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDondeDorimirMouseEntered
@@ -327,7 +334,7 @@ public class pnlInformacionCiudad extends javax.swing.JPanel {
 
     private void lblQueEstaCercaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblQueEstaCercaMouseClicked
         padre.remove(this);
-        padre.add(new pnlInicio(modelo, padre));
+        padre.add(new pnlMapas(modelo, ciudad, padre));
         padre.pack();
     }//GEN-LAST:event_lblQueEstaCercaMouseClicked
 

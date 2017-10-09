@@ -13,6 +13,7 @@ public class pResultado extends javax.swing.JPanel {
     
     public pResultado(Sistema unModelo, DescansoApp.dominio.Ciudad unaCiudad, JFrame unaVentana, JPanel unPadre) {
         initComponents();
+        
         modelo = unModelo;
         ciudad = unaCiudad;
         ventana = unaVentana;
