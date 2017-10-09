@@ -4,6 +4,7 @@ public class pResultadoIt2 extends javax.swing.JPanel {
 
     public pResultadoIt2(String unaFecha) {
         initComponents();
+        
         lblFecha.setText(unaFecha);
     }
 

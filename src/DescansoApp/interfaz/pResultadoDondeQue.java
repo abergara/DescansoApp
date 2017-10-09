@@ -15,6 +15,7 @@ public class pResultadoDondeQue extends javax.swing.JPanel {
     private DescansoApp.dominio.Ciudad ciudad;
    
     public pResultadoDondeQue(Sistema unModelo, ComercioActividad unCA,  JFrame unaVentana, JPanel unPadre, DescansoApp.dominio.Ciudad unaCiudad) {
+        
         initComponents();
        
         txtDes.setOpaque(false);

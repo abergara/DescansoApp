@@ -16,6 +16,7 @@ public class pResultadoIt3 extends javax.swing.JPanel {
 
     public pResultadoIt3(Sistema unModelo,Viaje unViaje, Evento unEvento, JFrame miContenedorPrincipal, JPanel miContenedor) {
         initComponents();
+        
         modelo= unModelo;
         evento = unEvento;
         viaje = unViaje;

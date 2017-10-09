@@ -18,6 +18,7 @@ public class pnlEvento extends javax.swing.JPanel {
 
     public pnlEvento(Sistema unModelo, Viaje unViaje, DescansoApp.dominio.Ciudad unaCiudad, Evento unEvento, JFrame unContenedor) {
         initComponents();
+        
         modelo = unModelo;
         viaje = unViaje;
         modEvento = unEvento;
@@ -135,7 +136,7 @@ public class pnlEvento extends javax.swing.JPanel {
         add(txtHoraFMinutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 19, 18));
 
         lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnGuardar.png"))); // NOI18N
-        lblGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblGuardarMouseClicked(evt);
@@ -150,7 +151,7 @@ public class pnlEvento extends javax.swing.JPanel {
         add(lblGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 250, -1, 30));
 
         lblEliminar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Eliminar.png"))); // NOI18N
-        lblEliminar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblEliminar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblEliminar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblEliminar1MouseClicked(evt);
@@ -165,7 +166,7 @@ public class pnlEvento extends javax.swing.JPanel {
         add(lblEliminar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, -1, 30));
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
-        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolverMouseClicked(evt);
@@ -226,8 +227,8 @@ public class pnlEvento extends javax.swing.JPanel {
             evento.setDescripcion(txtDescripcion.getText());
             evento.setCiudad(ciudad);
 
-            if (!esNumero(txtHoraIHoras.getText()) || !esNumero(txtHoraIMinutos.getText())
-                    || !esNumero(txtHoraFHoras.getText()) || !esNumero(txtHoraFMinutos.getText())) {
+            if (!EsNumero.esNumero(txtHoraIHoras.getText()) || !EsNumero.esNumero(txtHoraIMinutos.getText())
+                    || !EsNumero.esNumero(txtHoraFHoras.getText()) || !EsNumero.esNumero(txtHoraFMinutos.getText())) {
                 JOptionPane.showMessageDialog(this, "Formato incorrecto de la hora ingresada.", "Error", JOptionPane.ERROR_MESSAGE);
 
             } else {
@@ -271,19 +272,6 @@ public class pnlEvento extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_lblGuardarMouseClicked
 
-    public boolean esNumero(String texto) {
-        boolean correcto;
-        int num;
-
-        try {
-            num = Integer.parseInt(texto);
-            correcto = true;
-        } catch (NumberFormatException e) {
-            correcto = false;
-        }
-
-        return correcto;
-    }
     
     private void lblEliminar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEliminar1MouseClicked
         int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea eliminar el evento?", "Eliminar Evento", JOptionPane.OK_CANCEL_OPTION);

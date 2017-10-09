@@ -27,10 +27,11 @@ public class pnlMapas extends javax.swing.JPanel {
         lblTitulo = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(9, 170, 67));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/btnVolver.png"))); // NOI18N
-        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblVolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblVolverMouseClicked(evt);
@@ -46,7 +47,8 @@ public class pnlMapas extends javax.swing.JPanel {
         lblTitulo.setText("Mapa de Fray Bentos");
         add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 36, 267, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/DescansoApp/imagenes/Fondo.png"))); // NOI18N
+        lblFondo.setBackground(new java.awt.Color(7, 169, 35));
+        lblFondo.setOpaque(true);
         add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
