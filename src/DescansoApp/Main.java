@@ -1,5 +1,6 @@
 package DescansoApp;
 
+import DescansoApp.accesoADatos.LectorJSON;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -18,6 +19,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         modelo = cargarModelo();
+        
       
         Principal p = new Principal(modelo);
         p.add(new pnlInicio(modelo, p));
@@ -39,11 +41,12 @@ public class Main {
             leer.close();
         } catch (FileNotFoundException | ClassNotFoundException e) {
             //Si no puedo abrir el archivo, creo un modelo nuevo
-            unModelo = new Sistema();
+            LectorJSON accesoADatos = new LectorJSON();
+            unModelo = new Sistema(accesoADatos);
 
-            ArrayList<Ciudad> cdads = Informacion.ciudades();
-            for (int i=0; i < cdads.size(); i++)
-                unModelo.agregarCiudad(cdads.get(i));
+            //ArrayList<Ciudad> cdads = Informacion.ciudades();
+            //for (int i=0; i < cdads.size(); i++)
+            //    unModelo.agregarCiudad(cdads.get(i));
         }
 
         return unModelo;

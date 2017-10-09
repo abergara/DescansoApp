@@ -1,15 +1,19 @@
 package DescansoApp.dominio;
 
+import DescansoApp.IAccesoADatos;
 import java.io.Serializable;
 import java.util.*;
 
 public class Sistema  implements Serializable{
     private ArrayList<Viaje> listaViajes;
     private ArrayList<Ciudad> listaCiudades;
+    private IAccesoADatos accesoADatos;
     
-    public Sistema(){
+    public Sistema(IAccesoADatos unAccesoADatos){
         listaViajes = new ArrayList<>();
         listaCiudades = new ArrayList<>();
+        accesoADatos = unAccesoADatos;
+        listaCiudades = accesoADatos.cargarCiudades();
     }
 
     public ArrayList<Viaje> getListaViajes() {
