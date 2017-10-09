@@ -72,7 +72,7 @@ public class Ciudad implements Serializable {
                estGastronomicos.add(cA);
                 break;
             case actividad:
-                alojamientos.add(cA);
+                actividades.add(cA);
                 break;
         }
     }

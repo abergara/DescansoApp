@@ -35,7 +35,7 @@ public class Main {
             FileInputStream archivo = new FileInputStream("Sistema");
             ObjectInputStream leer = new ObjectInputStream(archivo);
 
-            unModelo = (Sistema) leer.readObject();
+            unModelo = (Sistema)leer.readObject();
             leer.close();
         } catch (FileNotFoundException | ClassNotFoundException e) {
             //Si no puedo abrir el archivo, creo un modelo nuevo

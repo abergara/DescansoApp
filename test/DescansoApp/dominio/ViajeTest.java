@@ -36,11 +36,11 @@ public class ViajeTest {
     @Test
     public void testSetFechaI() throws Exception {
         System.out.println("Set Fecha Inicial(setea una fecha la viaje)");
-        Calendar fechaI = new GregorianCalendar(2013, 11, 2);
+        Calendar fechaI = new GregorianCalendar(2018, 11, 2);
         Viaje instance = new Viaje();
         instance.setFechaI(fechaI);
 
-        Calendar expResult = new GregorianCalendar(2013, 11, 2);
+        Calendar expResult = new GregorianCalendar(2018, 11, 2);
         Calendar result = instance.getFechaI();
         assertTrue(true);
     }
@@ -212,12 +212,12 @@ public class ViajeTest {
     public void testToString() throws Exception {
         System.out.println("toString");
         Viaje v1 = new Viaje();
-        Calendar fI = new GregorianCalendar(2015, 11, 3);
+        Calendar fI = new GregorianCalendar(2018, 11, 3);
         v1.setFechaI(fI);
-        Calendar fF = new GregorianCalendar(2015, 11, 5);
+        Calendar fF = new GregorianCalendar(2018, 11, 5);
         v1.setFechaF(fI, fF);
 
-        String expResult = " (03/12/2015 - 05/12/2015)";
+        String expResult = " (03/11/2018 - 05/11/2018)";
         String result = v1.toString();
         assertTrue(true);
     }
@@ -227,12 +227,12 @@ public class ViajeTest {
     public void  testFechaToString() throws Exception{
         System.out.println("Fecha toString");
         Viaje v1 = new Viaje();
-        Calendar fI = new GregorianCalendar(2015, 5, 3);
+        Calendar fI = new GregorianCalendar(2018, 5, 3);
         v1.setFechaI(fI);
-        Calendar fF = new GregorianCalendar(2015, 8, 15);
+        Calendar fF = new GregorianCalendar(2018, 8, 15);
         v1.setFechaF(fI, fF);
 
-        String expResult = " (03/06/2015 - 15/09/2015)";
+        String expResult = " (03/05/2018 - 15/08/2018)";
         String result = v1.fechaToString();
         assertTrue(true);
         

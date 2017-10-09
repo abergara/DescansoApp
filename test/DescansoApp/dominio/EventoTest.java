@@ -35,11 +35,11 @@ public class EventoTest {
     @Test
     public void testSetFechaHoraI() throws Exception {
         System.out.println("Set Fecha-Hora Inicio(agrega una fecha hora inicio correctamente)");
-        Calendar fechaHoraI= new GregorianCalendar(2015, 9, 20, 21, 30);
+        Calendar fechaHoraI= new GregorianCalendar(2018, 9, 20, 21, 30);
         Evento instance = new Evento();
         instance.setFechaHoraI(fechaHoraI);
        
-        Calendar expResult = new GregorianCalendar(2015, 9, 20,21,30);
+        Calendar expResult = new GregorianCalendar(2018, 9, 20,21,30);
         Calendar result = instance.getFechaHoraI();
         assertTrue(true);
     }
@@ -208,7 +208,7 @@ public class EventoTest {
         System.out.println("toString");
         Evento e = new Evento();
         e.setNombre("Evento");
-        Calendar fI = new GregorianCalendar(2015, 11, 3, 10, 8);
+        Calendar fI = new GregorianCalendar(2018, 11, 3, 10, 8);
         e.setFechaHoraI(fI);
         e.setUbicacion("Ubicacion");
 
@@ -222,7 +222,7 @@ public class EventoTest {
     public void testHoraInicioToString() throws Exception {
         System.out.println("Hora Inicio ToString");
         Evento e = new Evento();
-        Calendar fI = new GregorianCalendar(2015, 11, 3, 10, 8);
+        Calendar fI = new GregorianCalendar(2018, 11, 3, 10, 8);
         e.setFechaHoraI(fI);
         
 
@@ -248,7 +248,7 @@ public class EventoTest {
     public void testFechaInicioToString() throws Exception{
         System.out.println("Fecha Inicio ToString");
         Evento e= new Evento();
-        Calendar fI= new GregorianCalendar(2015, 10, 3, 2, 15);
+        Calendar fI= new GregorianCalendar(2018, 10, 3, 2, 15);
         e.setFechaHoraI(fI);
         
         String expResult= "03/11/2015";
@@ -298,10 +298,10 @@ public class EventoTest {
     public void testCompareTo() throws Exception {
         System.out.println("compareTo(compara dos eventos con fecha iguales)");
         Evento e1= new Evento();
-        Calendar f1= new GregorianCalendar(2015, 10, 3, 2, 15);
+        Calendar f1= new GregorianCalendar(2018, 10, 3, 2, 15);
         e1.setFechaHoraI(f1);
         Evento e2= new Evento();
-        Calendar f2= new GregorianCalendar(2015, 10, 3, 2, 15);
+        Calendar f2= new GregorianCalendar(2018, 10, 3, 2, 15);
         e2.setFechaHoraI(f2);
         
         int expResult = 0;
@@ -313,10 +313,10 @@ public class EventoTest {
     public void testCompareTo2() throws Exception {
         System.out.println("compareTo(compara dos eventos con distintas fechas)");
         Evento e1= new Evento();
-        Calendar f1= new GregorianCalendar(2015, 10, 3, 2, 15);
+        Calendar f1= new GregorianCalendar(2018, 10, 3, 2, 15);
         e1.setFechaHoraI(f1);
         Evento e2= new Evento();
-        Calendar f2= new GregorianCalendar(2015, 9, 4, 12, 34);
+        Calendar f2= new GregorianCalendar(2018, 9, 4, 12, 34);
         e2.setFechaHoraI(f2);
         
         int expResult = 1;
@@ -328,10 +328,10 @@ public class EventoTest {
     public void testCompareTo3() throws Exception {
         System.out.println("compareTo(compara dos eventos con distintas fechas, cambiando el orden)");
         Evento e1= new Evento();
-        Calendar f1= new GregorianCalendar(2015, 9, 4, 12, 34);
+        Calendar f1= new GregorianCalendar(2018, 9, 4, 12, 34);
         e1.setFechaHoraI(f1);
         Evento e2= new Evento();
-        Calendar f2= new GregorianCalendar(2015, 10, 3, 2, 15);
+        Calendar f2= new GregorianCalendar(2018, 10, 3, 2, 15);
         e2.setFechaHoraI(f2);
         
         int expResult = -1;

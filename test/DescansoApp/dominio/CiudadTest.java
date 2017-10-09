@@ -197,7 +197,7 @@ public class CiudadTest {
        
         String expResult= "basedatos/fraybentos1.jpg";
         String aux = instance.getImagenes().get(0).getDescription();
-        String [] result= aux.toLowerCase().split("/turismoapp/");
+        String [] result= aux.toLowerCase().split("/descansoapp/");
         assertEquals(expResult, result[2]);
         
     
@@ -213,7 +213,7 @@ public class CiudadTest {
        
         String expResult= "basedatos/fraybentos2.jpg";
         String aux = instance.getImagenes().get(0).getDescription();
-        String [] result= aux.toLowerCase().split("/turismoapp/");
+        String [] result= aux.toLowerCase().split("/descansoapp/");
         assertEquals(expResult, result[2]);
         
     }
